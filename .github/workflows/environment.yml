@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Generate Dokka documentation
-        run: 'mvn pre-site'
+        run: '.\gradlew dokkaHtml'
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
