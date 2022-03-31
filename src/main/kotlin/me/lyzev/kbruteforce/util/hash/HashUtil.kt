@@ -16,6 +16,9 @@ import java.security.SecureRandom
  */
 object HashUtil {
 
+    /**
+     * Generates a random salt for hashing.
+     */
     @JvmStatic
     val salt: ByteArray
         get() = try {
@@ -27,6 +30,9 @@ object HashUtil {
             throw e
         }
 
+    /**
+     * Util method for hashing.
+     */
     @JvmStatic
     fun hash(`in`: String, salt: ByteArray?, hash: String): String = try {
         val md = MessageDigest.getInstance(hash)
