@@ -22,6 +22,9 @@ fun main() {
 }
 ```
 
+### Documentation
+You can find the documentation [here](https://lyzev.github.io/KBruteforce/).
+
 ## Bugs and Suggestions
 
 Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/Lyzev/KBruteforce/issues)
