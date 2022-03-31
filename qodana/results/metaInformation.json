@@ -1,0 +1,16 @@
+{
+  "total": 0,
+  "tools inspection": {
+    "Code Inspection": 0
+  },
+  "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/Lyzev/KBruteforce",
+        "revisionId": "3f63a2422b577905a739ecc4a5939c3cb767440d",
+        "branch": "master"
+      }
+    },
+    "deviceId": "200820300000000-bc39-35e6-e889-f019798d0104"
+  }
+}

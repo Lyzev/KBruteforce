@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "name": "KBruteforce",
+      "languageLevel": 11
+    },
+    {
+      "name": "KBruteforce.test",
+      "languageLevel": 11
+    },
+    {
+      "name": "KBruteforce.main",
+      "languageLevel": 11
+    }
+  ]
+}

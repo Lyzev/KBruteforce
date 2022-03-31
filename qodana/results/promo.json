@@ -1,0 +1,32 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Property \"salt\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/HashUtil.kt",
+      "language": "kotlin",
+      "line": 20,
+      "offset": 8,
+      "length": 4,
+      "code": {
+        "startLine": 18,
+        "length": 4,
+        "offset": 24,
+        "surroundingCode": "\n    @JvmStatic\n    val salt: ByteArray\n        get() = try {\n            val salt = ByteArray(16)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "-9175360081481001061"
+}]}
