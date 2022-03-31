@@ -16,6 +16,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:${project["dokka_version"]}")
+}
+
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "13"
 }
