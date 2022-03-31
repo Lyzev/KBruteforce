@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.5.10"
+    id("org.jetbrains.dokka") version "1.6.10"
 }
 
 operator fun Project.get(property: String): String {
@@ -13,10 +14,6 @@ version = "1.0"
 
 repositories {
     mavenCentral()
-}
-
-dependencies {
-    implementation("org.jetbrains.dokka:dokka-gradle-plugin:${project["dokka-gradle-plugin_version"]}")
 }
 
 tasks.withType<KotlinCompile>() {
