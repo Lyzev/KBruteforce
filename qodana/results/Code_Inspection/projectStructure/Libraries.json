@@ -30,6 +30,10 @@
         "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.10/6b84d926e28493be69daf673e40076f89492ef7/kotlin-stdlib-common-1.5.10.jar!/"
       ],
       "properties": {}
+    },
+    {
+      "name": "Gradle: org.jetbrains.dokka:dokka-gradle-plugin:0.9",
+      "roots": []
     }
   ]
 }

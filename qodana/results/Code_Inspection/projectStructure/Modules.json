@@ -65,6 +65,10 @@
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.10",
           "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.dokka:dokka-gradle-plugin:0.9",
+          "type": "Library"
         }
       ]
     },
@@ -109,6 +113,10 @@
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.dokka:dokka-gradle-plugin:0.9",
           "type": "Library"
         }
       ]

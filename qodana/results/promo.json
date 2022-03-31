@@ -6,21 +6,21 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "Property \"salt\" is never used",
+  "comment": "Function \"hash512\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "method",
-      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/HashUtil.kt",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/SHA3.kt",
       "language": "kotlin",
-      "line": 20,
+      "line": 30,
       "offset": 8,
-      "length": 4,
+      "length": 7,
       "code": {
-        "startLine": 18,
-        "length": 4,
-        "offset": 24,
-        "surroundingCode": "\n    @JvmStatic\n    val salt: ByteArray\n        get() = try {\n            val salt = ByteArray(16)"
+        "startLine": 28,
+        "length": 7,
+        "offset": 41,
+        "surroundingCode": "    @JvmStatic\n    @JvmOverloads\n    fun hash512(`in`: String, salt: ByteArray? = null): String = hash(`in`, salt, \"SHA3-512\")\n}"
       }
     }
   ],
@@ -28,5 +28,129 @@
     "module": "KBruteforce.main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "-9175360081481001061"
+  "hash": "3155700525219693012"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Object \"SHA3\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "class",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/SHA3.kt",
+      "language": "kotlin",
+      "line": 14,
+      "offset": 7,
+      "length": 4,
+      "code": {
+        "startLine": 12,
+        "length": 4,
+        "offset": 61,
+        "surroundingCode": " * @package me.lyzev.kbruteforce.util.hash.hashes\n */\nobject SHA3 {\n\n    @JvmStatic"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "1716607458142282837"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"hash384\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/SHA3.kt",
+      "language": "kotlin",
+      "line": 26,
+      "offset": 8,
+      "length": 7,
+      "code": {
+        "startLine": 24,
+        "length": 7,
+        "offset": 41,
+        "surroundingCode": "    @JvmStatic\n    @JvmOverloads\n    fun hash384(`in`: String, salt: ByteArray? = null): String = hash(`in`, salt, \"SHA3-384\")\n\n    @JvmStatic"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "-3822943508300564556"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"hash224\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/SHA3.kt",
+      "language": "kotlin",
+      "line": 18,
+      "offset": 8,
+      "length": 7,
+      "code": {
+        "startLine": 16,
+        "length": 7,
+        "offset": 41,
+        "surroundingCode": "    @JvmStatic\n    @JvmOverloads\n    fun hash224(`in`: String, salt: ByteArray? = null): String = hash(`in`, salt, \"SHA3-224\")\n\n    @JvmStatic"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "-1221763549408655019"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"hash256\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/SHA3.kt",
+      "language": "kotlin",
+      "line": 22,
+      "offset": 8,
+      "length": 7,
+      "code": {
+        "startLine": 20,
+        "length": 7,
+        "offset": 41,
+        "surroundingCode": "    @JvmStatic\n    @JvmOverloads\n    fun hash256(`in`: String, salt: ByteArray? = null): String = hash(`in`, salt, \"SHA3-256\")\n\n    @JvmStatic"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "7995552880647691470"
 }]}
