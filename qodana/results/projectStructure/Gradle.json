@@ -40,11 +40,6 @@
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-common",
       "version": "1.5.10"
-    },
-    {
-      "ideaName": "Gradle: org.jetbrains.dokka:dokka-gradle-plugin:0.9",
-      "gradleName": "org.jetbrains.dokka:dokka-gradle-plugin:0.9",
-      "unresolved": true
     }
   ]
 }
