@@ -26,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
       - name: Generate Dokka documentation
         run: './gradlew dokkaHTML'
       - name: Deploy to GitHub Pages
