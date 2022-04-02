@@ -29,7 +29,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Generate Dokka documentation
-        run: './gradlew dokkaHTML'
+        run: ./gradlew dokkaHTML
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

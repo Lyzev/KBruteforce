@@ -18,18 +18,8 @@ repositories {
     mavenCentral()
 }
 
-tasks.withType<DokkaTask>().configureEach {
-    dokkaSourceSets {
-        named("main") {
-            moduleName.set("Dokka Gradle Documentation")
-            includes.from("README.md")
-            sourceLink {
-                localDirectory.set(file("src/main/kotlin"))
-                remoteUrl.set(URL("https://github.com/Lyzev/KBruteforce/tree/gh-pages/dokka"))
-                remoteLineSuffix.set("#L")
-            }
-        }
-    }
+tasks.getByName<DokkaTask>("dokkaHtml") {
+    outputDirectory.set(buildDir.resolve("dokkaHtmlOutput"))
 }
 
 tasks.withType<KotlinCompile>() {
