@@ -34,6 +34,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./target/dokka
+          publish_dir: ./target/dokkaHtmlOutput
           publish_branch: gh-pages
           destination_dir: ./dokka
