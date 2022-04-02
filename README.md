@@ -1,6 +1,6 @@
 <h1 align="center">KBruteforce</h1>
 
-<p align="center">A library for bruteforce.</p>
+<p align="center">A library for brute forcing.</p>
 
 <div align="center">
     <a href="https://discord.gg/5UmsQP4MFH"><img src="https://img.shields.io/discord/610120595765723137?logo=discord" alt="Discord"/></a>
