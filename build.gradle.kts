@@ -1,6 +1,5 @@
 import org.jetbrains.dokka.gradle.DokkaTask
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import java.net.URL
 
 plugins {
     kotlin("jvm") version "1.5.10"

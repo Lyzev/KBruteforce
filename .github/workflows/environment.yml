@@ -3,7 +3,7 @@ name: Environment
 on:
   push:
     branches:
-      - 'master'
+      - master
   workflow_dispatch:
 
 jobs:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 'Qodana Scan'
+      - name: Qodana Scan
         uses: JetBrains/qodana-action@main
         with:
           linter: jetbrains/qodana-jvm
