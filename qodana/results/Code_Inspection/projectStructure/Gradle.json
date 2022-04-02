@@ -1,5 +1,5 @@
 {
-  "gradleJvm": "zulu-13",
+  "gradleJvm": "#USE_PROJECT_JDK",
   "libraries": [
     {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.10",

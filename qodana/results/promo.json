@@ -1,0 +1,63 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Remove unnecessary parentheses from function call with lambda",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "Info",
+  "comment": "Remove unnecessary parentheses from function call with lambda",
+  "detailsInfo": "Reports redundant empty parentheses of function calls where the only parameter is a lambda that's outside the parentheses.\n\nUse the 'Remove unnecessary parentheses from function call with lambda' quick-fix to clean up the code.\n\n**Examples:**\n\n\n      fun foo() {\n          listOf(1).forEach() {  }\n      }\n\nAfter the quick-fix is applied:\n\n\n      fun foo() {\n          listOf(1).forEach {  }\n      }\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 24,
+      "offset": 29,
+      "length": 2,
+      "code": {
+        "startLine": 22,
+        "length": 2,
+        "offset": 32,
+        "surroundingCode": "}\n\ntasks.withType<KotlinCompile>() {\n    kotlinOptions.jvmTarget = \"13\"\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce",
+    "inspectionName": "RemoveEmptyParenthesesFromLambdaCall"
+  },
+  "hash": "6966210894638242234"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Property \"salt\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/HashUtil.kt",
+      "language": "kotlin",
+      "line": 23,
+      "offset": 8,
+      "length": 4,
+      "code": {
+        "startLine": 21,
+        "length": 4,
+        "offset": 31,
+        "surroundingCode": "     */\n    @JvmStatic\n    val salt: ByteArray\n        get() = try {\n            val salt = ByteArray(16)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "8766656375239822619"
+}]}
