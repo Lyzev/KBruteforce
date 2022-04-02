@@ -8,7 +8,7 @@ import me.lyzev.kbruteforce.util.hash.HashUtil.hash
  *
  * @author Lyzev
  * @date 3/31/2022
- * @project Bruteforce
+ * @project KBruteforce
  * @package me.lyzev.kbruteforce.util.hash.hashes
  */
 object MD {

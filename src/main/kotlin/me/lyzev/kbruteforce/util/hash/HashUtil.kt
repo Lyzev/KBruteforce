@@ -11,7 +11,7 @@ import java.security.SecureRandom
  *
  * @author Lyzev
  * @date 3/31/2022
- * @project Bruteforce
+ * @project KBruteforce
  * @package me.lyzev.kbruteforce.util.hash
  */
 object HashUtil {

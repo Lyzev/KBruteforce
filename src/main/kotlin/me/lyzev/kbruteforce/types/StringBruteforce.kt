@@ -1,4 +1,6 @@
-package me.lyzev.kbruteforce
+package me.lyzev.kbruteforce.types
+
+import me.lyzev.kbruteforce.Bruteforce
 
 /**
  * This file is part of KBruteforce.
@@ -6,17 +8,30 @@ package me.lyzev.kbruteforce
  *
  * @author Lyzev
  * @date 3/30/2022
- * @project Bruteforce
- * @package me.lyzev.kbruteforce
+ * @project KBruteforce
+ * @package me.lyzev.kbruteforce.types
+ *
+ * This bruteforce method needs an array of chars and bruteforces all combinations with it.
+ *
+ * @property chars the array of chars
+ * @property min the start length
+ * @property max the end length
+ * @constructor creates an instance for bruteforcing char combinations
  */
-class KBruteforce(private val chars: CharArray, min: Int, private val max: Int) : Iterator<String>, Iterable<String> {
+class StringBruteforce(private val chars: CharArray, private val min: Int, private val max: Int) :
+    Bruteforce<String>() {
 
     private var positions = IntArray(min)
     private var last = ""
 
+    fun reset() {
+        positions = IntArray(min)
+        last = ""
+    }
+
     override operator fun hasNext(): Boolean = String(CharArray(max) { chars[chars.size - 1] }) != last
 
-    override operator fun next(): String {
+    override fun next(): String {
         if (String(CharArray(positions.size) { chars[chars.size - 1] }) == last)
             positions = IntArray(positions.size + 1)
         val next = StringBuilder()
@@ -35,6 +50,4 @@ class KBruteforce(private val chars: CharArray, min: Int, private val max: Int) 
             increase(pos + 1)
         }
     }
-
-    override operator fun iterator(): Iterator<String> = this
 }

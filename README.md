@@ -14,16 +14,92 @@
 
 ## Usage
 
+[![](https://jitpack.io/v/Lyzev/KBruteforce.svg?label=Release)](https://jitpack.io/#Lyzev/KBruteforce)
+
+### Import
+
+Replace `${version}` with the current version!
+
+<details>
+        <summary>Gradle KTS</summary>
+
+```
+repositories {
+	maven("https://jitpack.io")
+}
+
+dependencies {
+    implementation("com.github.Lyzev:KBruteforce:${version}")
+}
+```
+</details>
+
+<details>
+        <summary>Gradle Groovy</summary>
+
+```
+repositories {
+	maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.Lyzev:KBruteforce:${version}'
+}
+```
+</details>
+
+<details>
+        <summary>Maven</summary>
+
+```
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.Lyzev</groupId>
+        <artifactId>KBruteforce</artifactId>
+        <version>${version}</version>
+    </dependency>
+</dependencies>
+```
+</details>
+
+<details>
+        <summary>Raw Jar</summary>
+
+1. Go to the [release page](https://github.com/Lyzev/KBruteforce/releases).
+2. Download KBruteforce-${version}.jar.
+3. Add the jar to your classpath.
+</details>
+
+### Example
+
 ```kotlin
 fun main() {
-    val bruteforce = KBruteforce(charArrayOf('a', 'b', 'c'), 1, 3)
-    for (next in bruteforce)
-        println(next)
+    var bruteforce: Bruteforce<*> = StringBruteforce(charArrayOf('a', 'b', 'c', 'd'), 1, 5) // chars to bruteforce, start length, end length
+    var multiBruteforce = MultiBruteforce(bruteforce, 50) { // bruteforce instance, amount of threads, unit/thread to execute
+        println(SHA3.hash256(it.toString())) // prints the sha3 256 hash of the current bruteforce string
+    }
+    multiBruteforce.start() // starts the multithreading
+
+    bruteforce = DictionaryBruteforce(arrayOf("Game", "Password", "Life"), 1, 5) // words combinations to bruteforce, start length, end length
+    multiBruteforce = MultiBruteforce(bruteforce, 50) { // bruteforce instance, amount of threads, unit/thread to execute
+        println(it.toString()) // prints the current bruteforce string
+    }
+    multiBruteforce.start() // starts the multithreading
 }
 ```
 
-### Documentation
-You can find the documentation [here](https://lyzev.github.io/KBruteforce/).
+## Documentation
+You can find the documentation [here](https://lyzev.github.io/KBruteforce/dokka).
+
+## Code Quality Monitoring
+You can find the qodana report [here](https://lyzev.github.io/KBruteforce/qodana).
 
 ## Bugs and Suggestions
 
