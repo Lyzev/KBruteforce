@@ -3,19 +3,12 @@ package me.lyzev.kbruteforce.types
 import me.lyzev.kbruteforce.Bruteforce
 
 /**
- * This file is part of KBruteforce.
- * Copyright (c) 2021 Lyzev.
- *
- * @author Lyzev
- * @date 3/30/2022
- * @project KBruteforce
- * @package me.lyzev.kbruteforce.types
- *
  * This bruteforce method needs an array of chars and bruteforces all combinations with it.
  *
- * @property chars the array of chars
- * @property min the start length
- * @property max the end length
+ * @author Lyzev
+ * @param chars the array of chars
+ * @param min the start length
+ * @param max the end length
  * @constructor creates an instance for bruteforcing char combinations
  */
 class StringBruteforce(private val chars: CharArray, private val min: Int, private val max: Int) :
@@ -24,13 +17,22 @@ class StringBruteforce(private val chars: CharArray, private val min: Int, priva
     private var positions = IntArray(min)
     private var last = ""
 
+    /**
+     * Resets the bruteforce method.
+     */
     fun reset() {
         positions = IntArray(min)
         last = ""
     }
 
+    /**
+     * If it has a next bruteforce value.
+     */
     override operator fun hasNext(): Boolean = String(CharArray(max) { chars[chars.size - 1] }) != last
 
+    /**
+     * Gets the next bruteforce value.
+     */
     override fun next(): String {
         if (String(CharArray(positions.size) { chars[chars.size - 1] }) == last)
             positions = IntArray(positions.size + 1)
@@ -41,6 +43,9 @@ class StringBruteforce(private val chars: CharArray, private val min: Int, priva
         return last
     }
 
+    /**
+     * Increases the bruteforce value.
+     */
     private fun increase(pos: Int) {
         if (pos == positions.size)
             return

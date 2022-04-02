@@ -25,13 +25,14 @@ Replace `${version}` with the current version!
 
 ```kotlin
 repositories {
-	maven("https://jitpack.io")
+    maven("https://jitpack.io")
 }
 
 dependencies {
     implementation("com.github.Lyzev:KBruteforce:${version}")
 }
 ```
+
 </details>
 
 <details>
@@ -46,6 +47,7 @@ dependencies {
     implementation 'com.github.Lyzev:KBruteforce:${version}'
 }
 ```
+
 </details>
 
 <details>
@@ -67,6 +69,7 @@ dependencies {
     </dependency>
 </dependencies>
 ```
+
 </details>
 
 <details>
@@ -75,30 +78,40 @@ dependencies {
 1. Go to the [release page](https://github.com/Lyzev/KBruteforce/releases).
 2. Download KBruteforce-${version}.jar.
 3. Add the jar to your classpath.
+
 </details>
 
 ### Example
 
 ```kotlin
 fun main() {
-    var bruteforce: Bruteforce<*> = StringBruteforce(charArrayOf('a', 'b', 'c', 'd'), 1, 5) // chars to bruteforce, start length, end length
-    var multiBruteforce = MultiBruteforce(bruteforce, 50) { // bruteforce instance, amount of threads, unit/thread to execute
-        println(SHA3.hash256(it.toString())) // prints the sha3 256 hash of the current bruteforce string
-    }
+    var bruteforce: Bruteforce<*> =
+        StringBruteforce(charArrayOf('a', 'b', 'c', 'd'), 1, 5) // chars to bruteforce, start length, end length
+    var multiBruteforce =
+        MultiBruteforce(bruteforce, 50) { // bruteforce instance, amount of threads, unit/thread to execute
+            println(SHA3.hash256(it.toString())) // prints the sha3 256 hash of the current bruteforce string
+        }
     multiBruteforce.start() // starts the multithreading
 
-    bruteforce = DictionaryBruteforce(arrayOf("Game", "Password", "Life"), 1, 5) // word combinations to bruteforce, start length, end length
-    multiBruteforce = MultiBruteforce(bruteforce, 50) { // bruteforce instance, amount of threads, unit/thread to execute
-        println(it.toString()) // prints the current bruteforce string
-    }
+    bruteforce = DictionaryBruteforce(
+        arrayOf("Game", "Password", "Life"),
+        1,
+        5
+    ) // word combinations to bruteforce, start length, end length
+    multiBruteforce =
+        MultiBruteforce(bruteforce, 50) { // bruteforce instance, amount of threads, unit/thread to execute
+            println(it.toString()) // prints the current bruteforce string
+        }
     multiBruteforce.start() // starts the multithreading
 }
 ```
 
 ## Documentation
+
 You can find the documentation [here](https://lyzev.github.io/KBruteforce/dokka).
 
 ## Code Quality Monitoring
+
 You can find the qodana report [here](https://lyzev.github.io/KBruteforce/qodana).
 
 ## Bugs and Suggestions
