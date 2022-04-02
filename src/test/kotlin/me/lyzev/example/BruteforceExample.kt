@@ -22,7 +22,7 @@ fun main() {
     }
     multiBruteforce.start() // starts the multithreading
 
-    bruteforce = DictionaryBruteforce(arrayOf("Game", "Password", "Life"), 1, 5) // words combinations to bruteforce, start length, end length
+    bruteforce = DictionaryBruteforce(arrayOf("Game", "Password", "Life"), 1, 5) // word combinations to bruteforce, start length, end length
     multiBruteforce = MultiBruteforce(bruteforce, 50) { // bruteforce instance, amount of threads, unit/thread to execute
         println(it.toString()) // prints the current bruteforce string
     }
