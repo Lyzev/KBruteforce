@@ -1,0 +1,125 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"hash5\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/MD.kt",
+      "language": "kotlin",
+      "line": 26,
+      "offset": 8,
+      "length": 5,
+      "code": {
+        "startLine": 24,
+        "length": 5,
+        "offset": 41,
+        "surroundingCode": "    @JvmStatic\n    @JvmOverloads\n    fun hash5(`in`: String, salt: ByteArray? = null): String = hash(`in`, salt, \"MD5\")\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "2026702442892200797"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"hash4\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/MD.kt",
+      "language": "kotlin",
+      "line": 22,
+      "offset": 8,
+      "length": 5,
+      "code": {
+        "startLine": 20,
+        "length": 5,
+        "offset": 41,
+        "surroundingCode": "    @JvmStatic\n    @JvmOverloads\n    fun hash4(`in`: String, salt: ByteArray? = null): String = hash(`in`, salt, \"MD4\")\n\n    @JvmStatic"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "-53595206392705192"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"hash2\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/MD.kt",
+      "language": "kotlin",
+      "line": 18,
+      "offset": 8,
+      "length": 5,
+      "code": {
+        "startLine": 16,
+        "length": 5,
+        "offset": 41,
+        "surroundingCode": "    @JvmStatic\n    @JvmOverloads\n    fun hash2(`in`: String, salt: ByteArray? = null): String = hash(`in`, salt, \"MD2\")\n\n    @JvmStatic"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "3305013055409396666"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Object \"MD\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "class",
+      "path": "src/main/kotlin/me/lyzev/kbruteforce/util/hash/hashes/MD.kt",
+      "language": "kotlin",
+      "line": 14,
+      "offset": 7,
+      "length": 2,
+      "code": {
+        "startLine": 12,
+        "length": 2,
+        "offset": 61,
+        "surroundingCode": " * @package me.lyzev.kbruteforce.util.hash.hashes\n */\nobject MD {\n\n    @JvmStatic"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "KBruteforce.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "-5469054136630237406"
+}]}
