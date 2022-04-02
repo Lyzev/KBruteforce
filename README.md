@@ -23,7 +23,7 @@ Replace `${version}` with the current version!
 <details>
         <summary>Gradle KTS</summary>
 
-```
+```kotlin
 repositories {
 	maven("https://jitpack.io")
 }
