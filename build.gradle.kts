@@ -6,10 +6,6 @@ plugins {
     id("org.jetbrains.dokka") version "1.6.10"
 }
 
-operator fun Project.get(property: String): String {
-    return property(property) as String
-}
-
 group = "me.lyzev"
 version = "1.0"
 
