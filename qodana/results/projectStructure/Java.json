@@ -2,15 +2,15 @@
   "modules": [
     {
       "name": "KBruteforce",
-      "languageLevel": 11
+      "languageLevel": 16
     },
     {
       "name": "KBruteforce.test",
-      "languageLevel": 11
+      "languageLevel": 16
     },
     {
       "name": "KBruteforce.main",
-      "languageLevel": 11
+      "languageLevel": 16
     }
   ]
 }
