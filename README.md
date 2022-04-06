@@ -76,7 +76,7 @@ dependencies {
         <summary>Raw Jar</summary>
 
 1. Go to the [release page](https://github.com/Lyzev/KBruteforce/releases).
-2. Download KBruteforce-${version}.jar.
+2. Download KBruteforce-${version}-all.jar.
 3. Add the jar to your classpath.
 
 </details>
