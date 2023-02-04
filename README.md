@@ -3,7 +3,7 @@
 <p align="center">A library for brute forcing.</p>
 
 <div align="center">
-    <a href="https://discord.gg/5UmsQP4MFH"><img src="https://img.shields.io/discord/610120595765723137?logo=discord" alt="Discord"/></a>
+    <a href="https://lyzev.github.io/discord/"><img src="https://img.shields.io/discord/610120595765723137?logo=discord" alt="Discord"/></a>
     <br><br>
     <img src="https://img.shields.io/github/last-commit/Lyzev/KBruteforce" alt="GitHub last commit"/>
     <img src="https://img.shields.io/github/commit-activity/w/Lyzev/KBruteforce" alt="GitHub commit activity"/>
@@ -12,8 +12,10 @@
     <img src="https://img.shields.io/github/contributors/Lyzev/KBruteforce" alt="GitHub contributors"/>
 </div>
 
-## Usage
+## Disclaimer
+Please note, this repository is for educational and proof of concept purposes only. The information and code contained within it should not be used for any illegal or unethical activities. The contributors to this repository are not liable for any actions taken or damages caused by the use of the information or code provided here. It is the responsibility of the user to ensure compliance with all applicable laws and regulations, and to obtain any necessary permissions before using the code or information.
 
+## Usage
 [![](https://jitpack.io/v/Lyzev/KBruteforce.svg?label=Release)](https://jitpack.io/#Lyzev/KBruteforce)
 
 ### Import
@@ -107,20 +109,12 @@ fun main() {
 ```
 
 ## Documentation
-
 You can find the documentation [here](https://lyzev.github.io/KBruteforce/dokka).
 
 ## Code Quality Monitoring
-
 You can find the qodana report [here](https://lyzev.github.io/KBruteforce/qodana).
 
 ## Bugs and Suggestions
-
 Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/Lyzev/KBruteforce/issues)
 using the templates provided. Please provide as much information as you can to best help us understand your issue and
 give a better chance of it being resolved.
-
-## Important
-
-Please note that this repository is for educational purposes only. No contributor, major or minor, are to fault for any
-actions done with this library.
